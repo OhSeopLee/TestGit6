@@ -17,3 +17,18 @@ GIT - SVN
   ( tracked상태 이후 확인 가능 )
   unstaged상태 : 관리 대상이기는 하나 아직 이력 상태를 저장하지 않은 경우(제외)
   staged상태 : 관리 대상이면서 이력 상태를 저장한 경우(commit)
+
+* 저장소 생성 => git init
+  > git status : 상태 확인
+  > git add : 파일의 상태를 tracked 상태로 변경
+  > 깃에 사용자 정보를 등록
+     git config --global user.email "you@example.com"
+     git config --global user.name "Your Name"
+
+
+  > 깃을 사용해서 정보를 저장 : commit
+     git commit -m "저장하는 메세지(작업내용)"
+
+  > 깃의 commit 기록 확인
+      git log
+      git log --oneline --all --graph
